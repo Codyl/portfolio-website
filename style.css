@@ -86,6 +86,9 @@ nav div a {
 .center {
     text-align: center;
 }
+.right {
+    float: right;
+}
 .titleNav {
     float: left;
     position: fixed;
@@ -117,7 +120,6 @@ h2 {
 }
 .box {
     margin-bottom: 10px;
-    padding-bottom: 10px;
     background-color: #F3F3F3;
 }
 .box::before {
@@ -134,10 +136,10 @@ h2 {
     content: "";
     display: block;
     position: relative;
-    top: -65%;
-    left: -5px;
+    top: -90%;
+    left: 5px;
     float: left;
-    width: 2px;
+    width: 4px;
     height: 80%;
 }
 .project img {

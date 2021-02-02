@@ -183,3 +183,6 @@ h2 {
 textarea {
     width: 93%;
 }
+.isHidden {
+    visibility: hidden;
+}

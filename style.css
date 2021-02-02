@@ -1,7 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0px;
     position: relative;
+    background-color: #436B8A;
+}
+#bg {
+    background-image: url("./img/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
 }
 nav {
     height: 6vh;
@@ -9,10 +22,10 @@ nav {
     position: fixed;
     width: 100%;
     top: 0px;
+    z-index: 1;
 }
-nav > div {
-    position: absolute;
-    right: 10px;
+nav div {
+    float: right;
 }
 nav div a {
     display: inline;
@@ -27,15 +40,10 @@ nav div a {
       font-size: 4vw;
     }
   }
-a:hover {
+.anchor:hover {
     color: #C5CED5;
 }
 #open {
-    background-image: url("./img/background.jpg");
-    background-color: white;
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 100vh;
     text-align: center;
 }
 #selfPortrait {
@@ -46,33 +54,34 @@ a:hover {
     border: 5px solid black;
 }
 #main {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 4vw 0px 4vw;
     background-color: white;
-}
-body {
-    background-color: blue;
-}
-hr {
-    /* font-weight: 900; */
+    padding: 60px 10px;
 }
 .white {
     color: white;
     -webkit-text-stroke: 1px black;
 }
+
+/* Text font types */
 .decorativeText {
     font-family: 'Leelawadee UI', 'Times New Roman', Times, serif;
     font-size: 60px;
 }
 .paragraphText {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: ;
+    font-size: 1em;
+    padding-left: 20px;
 }
 .sectionHeaderText {
-    font-family: 'Lucida Fax', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif';
+    font-family: 'Lucida Fax', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: #8A436B;
+    
 }
 .navText {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
+    z-index: 1;
 }
 .center {
     text-align: center;
@@ -80,8 +89,9 @@ hr {
 .titleNav {
     float: left;
     position: fixed;
-    top: -5px;
-    font-size: medium;
+    top: 0px;
+    left: 5px;
+    font-size: 1.5em;
 }
 .icons {
     font-size: 3em;
@@ -89,7 +99,7 @@ hr {
 .icon {
     color: black;
 }
-hr {
+#titleHr {
     border: none;
     height: 3px;
     width: 30vw;
@@ -99,4 +109,66 @@ h1 {
     margin-bottom: 0px;
     margin-top: 0px;
     font-size: 50px;
+}
+h2 {
+    margin-top: 0;
+    padding-top: 30px;
+}
+.box {
+    margin-bottom: 10px;
+    background-color: #F3F3F3;
+}
+.box::before {
+    background-color: #C1C1C1;
+    content: "";
+    display: block;
+    float: left;
+    width: 2px;
+    height: 100%;
+    margin-right: 10px;
+}
+.box::after {
+    background-color: #C1C1C1;
+    content: "";
+    display: block;
+    position: relative;
+    top: -65%;
+    left: -5px;
+    float: left;
+    width: 2px;
+    height: 80%;
+}
+.project img {
+    width: 90%;
+    margin: 5%;
+}
+#empty {
+    height: 100vh;
+}
+.transitionOpacity {
+    transition: opacity 0%;
+}
+.button {
+    background-color: #6B8A43;
+    border-radius: 10px;
+    border: 3px solid #4F6632;
+    color: white;
+    padding: 3px;
+    margin: 3px;
+    text-decoration: none;
+}
+.highlights {
+    background-color: white;
+    border: 3px solid lightgray;
+    position: relative;
+    float: right;
+    margin: 15px;
+}
+.halfed {
+    display: grid;
+    grid-template-columns: 60% auto;
+}
+.blueBackground {
+    width: 100%;
+    background-color: #436B8A;
 }

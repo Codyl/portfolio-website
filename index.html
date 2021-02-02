@@ -10,62 +10,138 @@
 <body>
     <nav>
         <div>
-            <a class="subtitle navText" href="#about">About Me</a>
-            <a class="subtitle navText" href="#interests">Interests</a>
-            <a class="subtitle navText" href="#projects">Projects</a>
-            <a class="subtitle navText" href="#contacts">Contact</a>
+            <a class="anchor navText" href="#about">About Me</a>
+            <a class="anchor navText" href="#interests">Interests</a>
+            <a class="anchor navText" href="#projects">Projects</a>
+            <a class="anchor navText" href="#contact">Contact</a>
         </div>
     </nav>
+    <div id="bg"></div>
     <div id="open">
         <img src="./img/self-portrait.jpg" alt="" id="selfPortrait">
         <h1 class="white decorativeText center" id="codyLillywhiteh1">Cody Lillywhite</h1>
         <div class="white navText">Software Engineering student at BYU-I</div>
-        <hr>
+        <hr id="titleHr">
         <div class="icons">
             <a class="icon" href="https://github.com/Codyl"> <i class="fab fa-github"></i></a>
             <a class="icon" href="https://www.linkedin.com/in/cody-lillywhite/"> <i class="fab fa-linkedin"></i></a>
             <a class="icon" href="https://dev.to/codyl"> <i class="fab fa-dev"></i></a>
         </div>
     </div>
+    <div class="blueBackground">
     <div id="main">
-        <div>
+        <div class="box">
             <h2 class="sectionHeaderText" id="about">About Me</h2>
-            <div>
-                <p>I am a wholistic minded developer residing
-                    in Kentucky. I am looking for an Web Frontend
-                    internship preferably in Kentucky or Texas but
-                    I am more than willing to relocate if needs be. 
-                    I have a passion for art and learning. My focus is
-                    with building projects using Java and JavaScript
-                    though I also have experience with C++,C#,
-                    Python, and other web technologies. </p>
+            <div class="halfed">
+                <div>
+                    <p class="paragraphText">
+                        I am a wholistic minded developer residing
+                        in Kentucky. I am looking for an Web Frontend
+                        internship preferably in Kentucky or Texas but
+                        I am more than willing to relocate if needs be. 
+                    </p>
+                    <p class="paragraphText">
+                        I have a passion for art and learning. My focus is
+                        with building projects using Java and JavaScript
+                        though I also have experience with C++,C#,
+                        Python, and other web technologies.
+                    </p>
+                </div>
+                <div class="box highlights">
+                    <h3 class="sectionHeaderText" id="about">Highlights</h3>
+                    <ul>
+                        <li>Devoted Learner</li>
+                        <li>Thorough knowledge of Git</li>
+                        <li>Clean code</li>
+                    </ul>
                 </div>
             </div>
-            <div>
-            <h2 class="sectionHeaderText" id="interests">Interests</h2>
-            <div>
-                <ul>
-                    <li> Web front end</li>
-                    <li> Exploring different tools and technologies</li>
-                    <li> Teaching programming</li>
-                    <li> Making something new and exciting</li>
-                    <li> Long distance running</li>
-                </ul>
-            </div>
         </div>
-        <div>
+        <div class="box">
+            <h2 class="sectionHeaderText" id="interests">Interests</h2>
+            <ul>
+                <li> Web front end</li>
+                <li> Exploring different tools and technologies</li>
+                <li> Teaching programming</li>
+                <li> Making something new and exciting</li>
+                <li> Long distance running</li>
+            </ul>
+        </div>
+        <div class="box">
             <h2 class="sectionHeaderText" id="projects">Projects</h2>
             <div class="project">
-                <h3></h3>
-                <p></p>
+                <h3>Dungeons and dragons Session</h3>
+                <p class="paragraphText">A web tool for running a dungeons and dragons session.
+                    Allows you to see rules generated from dndapi.com, use
+                    a form to edit a character, and move on a map.
+                </p>
+                <p>Technologies: html, JS, CSS</p>
+                <h4>Highlights:</h4>
+                <ul>
+                    <li>Helped in learning clean code practices</li>
+                    <li>Covered many JS capabilities</li>
+                </ul>
+                <a class="button" href="https://github.com/Codyl/dndproject">
+                    <i  class="fab fa-github"></i>
+                    View Code
+                </a>
+                <a class="button" href="https://codyl.github.io/dndProject">
+                    <i class="fas fa-vial"></i>
+                    Try it out
+                </a>
+                <a href="">
+                    <img src="./img/dnd.png" alt="">
+                </a>
             </div>
+            <hr>
             <div class="project">
-                <h3></h3>
-                <p></p>
+                <h3>Cycle count</h3>
+                <p class="paragraphText">
+                    A website for counting inventory of several items at a time
+                    by presenting then in a form.
+                </p>
+                <p>Technologies: html, JS, CSS</p>
+                <h4>Highlights:</h4>
+                <ul>
+                    <li>Helped in learning clean code practices</li>
+                    <li>Covered many JS capabilities</li>
+                </ul>
+                    <a class="button" href="https://github.com/Codyl/dndproject">
+                        <i  class="fab fa-github"></i>
+                        View Code
+                    </a>
+                    <a class="button" href="https://codyl.github.io/dndProject">
+                        <i class="fas fa-vial"></i>
+                        Try it out
+                    </a>
+                <a href="">
+                    <img src="./img/cycleCP.png" alt="">
+                </a>
             </div>
+            <hr>
             <div class="project">
-                <h3></h3>
-                <p></p>
+                <h3>LTL Queue</h3>
+                <p class="paragraphText">
+                    A web tool for keeping track of what items 
+                    still need pulled.
+                </p>
+                <p>Technologies: html, JS, CSS</p>
+                <h4>Highlights:</h4>
+                <ul>
+                    <li>Helped in learning clean code practices</li>
+                    <li>Covered many JS capabilities</li>
+                </ul>
+                <a class="button" href="https://github.com/Codyl/dndproject">
+                    <i  class="fab fa-github"></i>
+                    View Code
+                </a>
+                <a class="button" href="https://codyl.github.io/dndProject">
+                    <i class="fas fa-vial"></i>
+                    Try it out
+                </a>
+                <a href="">
+                    <img src="./img/ltlQueueCP.png" alt="">
+                </a>
             </div>
         </div>
         <div>
@@ -79,6 +155,8 @@
             </div>
         </div>
     </div>
+</div>
     <script src="./script.js"></script>
+    
 </body>
 </html>

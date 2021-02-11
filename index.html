@@ -9,11 +9,14 @@
 </head>
 <body>
     <nav>
-        <div>
+        <div class="largeScreenNav">
             <a class="anchor navText" href="#about">About Me</a>
             <a class="anchor navText" href="#interests">Interests</a>
             <a class="anchor navText" href="#projects">Projects</a>
             <a class="anchor navText" href="#contact">Contact</a>
+        </div>
+        <div class="smallScreenNav">
+           <a onclick="showDropDownNav()"><i class="fas fa-bars"></i></a> 
         </div>
     </nav>
     <div id="bg"></div>
@@ -30,7 +33,7 @@
     </div>
     <div class="blueBackground">
     <div id="main">
-        <div class="box">
+        <div class="box sideDecor" data-testid="about-box">
             <h2 class="sectionHeaderText" id="about">About Me</h2>
             <div class="halfed">
                 <div>
@@ -57,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="box">
+        <div class="box sideDecor" data-testid="interests-box">
             <h2 class="sectionHeaderText" id="interests">Interests</h2>
             <ul>
                 <li> Web front end</li>
@@ -67,15 +70,15 @@
                 <li> Long distance running</li>
             </ul>
         </div>
-        <div class="box">
+        <div class="box sideDecor" data-testid="projects-box">
             <h2 class="sectionHeaderText" id="projects">Projects</h2>
-            <div class="project">
+            <div class="project" data-testid="dnd-project">
                 <h3>Dungeons and dragons Session</h3>
                 <p class="paragraphText">A web tool for running a dungeons and dragons session.
                     Allows you to see rules generated from dndapi.com, use
                     a form to edit a character, and move on a map.
                 </p>
-                <p>Technologies: html, JS, CSS</p>
+                <p>Technologies: html, JS, CSS, webSockets, JSON, API</p>
                 <h4>Highlights:</h4>
                 <ul>
                     <li>Helped in learning clean code practices</li>
@@ -89,73 +92,64 @@
                     <i class="fas fa-vial"></i>
                     Try it out
                 </a>
-                <a href="">
-                    <img src="./img/dnd.png" alt="">
-                </a>
-            </div>
+                <img src="./img/dnd.png" alt=""/>
+            </div> 
+             
             <hr>
-            <div class="project">
+            <div class="project" data-testid="cycle-count-project">
                 <h3>Cycle count</h3>
                 <p class="paragraphText">
                     A website for counting inventory of several items at a time
                     by presenting then in a form.
                 </p>
-                <p>Technologies: html, JS, CSS</p>
+                <p>Technologies: PHP, CSS, SQL</p>
                 <h4>Highlights:</h4>
                 <ul>
-                    <li>Helped in learning clean code practices</li>
-                    <li>Covered many JS capabilities</li>
+                    <li>Generates web page from SQL</li>
                 </ul>
-                    <a class="button" href="https://github.com/Codyl/CP_CycleCount">
-                        <i  class="fab fa-github"></i>
-                        View Code
-                    </a>
-                    <a class="button isHidden" href="">
-                        <i class="fas fa-vial"></i>
-                        Try it out
-                    </a>
-                <a href="">
-                    <img src="./img/cycleCP.png" alt="">
+                <a class="button" href="https://github.com/Codyl/CP_CycleCount">
+                    <i  class="fab fa-github"></i>
+                    View Code
                 </a>
-            </div>
+                <a class="button isHidden" href="">
+                    <i class="fas fa-vial"></i>
+                    Try it out
+                </a>
+                <img src="./img/cycleCP.png" alt="">
+        </div>
             <hr>
-            <div class="project">
-                <h3>LTL Queue</h3>
+            <div class="project" data-testid="ltl-project">
+                <h3>Less Than truckLoad (LTL) Queue</h3>
                 <p class="paragraphText">
                     A web tool for keeping track of what items 
-                    still need pulled.
+                    still need pulled to put on the truck.
                 </p>
-                <p>Technologies: html, JS, CSS</p>
+                <p>Technologies: html, JS, CSS, NodeJS, SQL, Heroku</p>
                 <h4>Highlights:</h4>
                 <ul>
-                    <li>Helped in learning clean code practices</li>
-                    <li>Covered many JS capabilities</li>
+                    <li>Node</li>
                 </ul>
                 <a class="button" href="https://github.com/Codyl/CP_OrderQueue">
-                    <i  class="fab fa-github"></i>
+                    <i class="fab fa-github"></i>
                     View Code
                 </a>
                 <a class="button" href="https://chl-cse341-project2.herokuapp.com/">
                     <i class="fas fa-vial"></i>
                     Try it out
                 </a>
-                <a href="">
-                    <img src="./img/ltlQueueCP.png" alt="">
-                </a>
+                <img src="./img/ltlQueueCP.png" alt="">
             </div>
         </div>
-        <div>
-            <div class="box">
-                <h2 class="sectionHeaderText" id="contact">Contact me</h2>
-                <form method="POST" action="https://formspree.io/f/xoqpbeaw">
-                    <input class="block" type="text" name="name" id="name" placeholder="Name">
-                    <input class="block" type="email" name="_replyto" id="email" placeholder="Email">
-                    <div>
-                    <textarea  class="block" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button class="button" onclick="sendEmail()">Send</button>
-                </div>
-                </form>
+        <div class="box sideDecor" data-testid="contact-box">
+            <h2 class="sectionHeaderText" id="contact">Contact me</h2>
+            <form method="POST" action="https://formspree.io/f/xoqpbeaw">
+                <input class="block" type="text" name="name" id="name" placeholder="Name">
+                <input class="block" type="email" name="_replyto" id="email" placeholder="Email">
+                <div>
+                <textarea  class="block" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="button" onclick="sendEmail()">Send</button>
             </div>
+            </form>
         </div>
     </div>
 </div>

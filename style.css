@@ -28,27 +28,36 @@ nav {
 nav div {
     float: right;
 }
-nav div a {
-    display: inline;
+.navIcon {
+    float:right;
     padding: 10px 10px;
-    float: left;
     color: white;
-    font-size: 2vw;
-    text-decoration: none;
 }
-.smallScreenNav {
+#smallScreenNav {
     display: none;
+}
+@media screen and (min-width: 600px) {
+    .halfed {
+        display: grid;
+        grid-template-columns: 60% auto;
+    }
 }
 @media screen and (max-width: 600px) {
     nav div a {
       font-size: 4vw;
     }
-    .largeScreenNav {
+    #largeScreenNav {
         display: none;
     }
-    .smallScreenNav {
+    #smallScreenNav {
         display: contents;
         float: right;
+    }
+    .halfed {
+        display: grid;
+        grid-template-rows: 60% auto;
+        grid-template-columns:none;
+        margin-bottom: 10px;
     }
   }
 .anchor:hover {
@@ -78,7 +87,7 @@ nav div a {
 /* Text font types */
 .decorativeText {
     font-family: 'Leelawadee UI', 'Times New Roman', Times, serif;
-    font-size: 60px;
+    font-size: 3em;
 }
 .paragraphText {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -94,6 +103,12 @@ nav div a {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     z-index: 1;
+
+    display: inline;
+    padding: 10px 10px;
+    
+    color: white;
+    text-decoration: none;
 }
 .center {
     text-align: center;
@@ -154,7 +169,7 @@ h2 {
     height: 80%;
 }
 .project {
-
+    margin-bottom: 30px;
 }
 .project img {
     width: 90%;
@@ -182,10 +197,7 @@ h2 {
     float: right;
     margin: 15px;
 }
-.halfed {
-    display: grid;
-    grid-template-columns: 60% auto;
-}
+
 .blueBackground {
     width: 100%;
     background-color: #436B8A;
@@ -195,7 +207,7 @@ h2 {
     margin: 5px;
 }
 textarea {
-    width: 93%;
+    width: 90%;
 }
 .isHidden {
     visibility: hidden;

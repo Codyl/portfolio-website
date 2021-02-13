@@ -1,21 +1,30 @@
 let codyLillywhiteh1 = document.getElementById("codyLillywhiteh1");
+const titleNav = document.getElementById('titleNav');
 let background = document.getElementById("bg");
 let smallNavDisplayActive =false;
 const NAV_ANCHOR_NAMES = ["About", "Interests", "Projects", "Contact"];
+const isDisplayingSmallNav = false;
+
 
 document.addEventListener("scroll", () => {
     if(window.scrollY > 400) {
-        codyLillywhiteh1.classList.add("titleNav");
-        codyLillywhiteh1.classList.remove("center");
-        background.classList.add("transitionOpacity")
+        titleNav.classList.remove('isHidden');
     }
     else if(window.scrollY < 350){
-        codyLillywhiteh1.classList.add("center");
-        codyLillywhiteh1.classList.remove("titleNav");
+        titleNav.classList.add('isHidden');
+    }
+    if(smallNavDisplayActive) {
+        setSmallNavDisplayInactive();
     }
 });
 document.getElementById('navIcon').addEventListener('click', () => {
-    setSmallNavDisplayActive();
+        if(smallNavDisplayActive) {
+            setSmallNavDisplayInactive();
+        }
+        else {
+            setSmallNavDisplayActive();
+            smallNavDisplayActive = true;
+        }
 })
 function setSmallNavDisplayActive() {
     document.getElementById('nav').style.height = "40vh";
@@ -26,6 +35,7 @@ function setSmallNavDisplayActive() {
 }
 function setSmallNavDisplayInactive() {
     document.getElementById('nav').style.height = "6vh";
+    smallNavDisplayActive = false;
     for(anchor of NAV_ANCHOR_NAMES) {
     document.getElementById(anchor).remove();
     }

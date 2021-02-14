@@ -9,27 +9,27 @@
 </head>
 <body>
     <nav id="nav">
-        <div id="largeScreenNav">
-            <a class="anchor navText" href="#about">About</a>
-            <a class="anchor navText" href="#interests">Interests</a>
-            <a class="anchor navText" href="#projects">Projects</a>
-            <a class="anchor navText" href="#contact">Contact</a>
+        <div id="largeScreenNav" class="right">
+            <a class="navSectionAnchor navText white" href="#about">About</a>
+            <a class="navSectionAnchor navText white" href="#interests">Interests</a>
+            <a class="navSectionAnchor navText white" href="#projects">Projects</a>
+            <a class="navSectionAnchor navText white" href="#contact">Contact</a>
         </div>
-        <div id="smallScreenNav">
-           <a class="navIcon" id="navIcon"><i class="fas fa-bars"></i></a> 
+        <div id="smallScreenNav" class="right">
+           <a class="navIconBars white" id="navIcon"><i class="fas fa-bars"></i></a> 
         </div>
     </nav>
-    <div id="bg"></div>
-    <div id="open">
+    <div id="imgBackground"></div>
+    <div class="center">
         <img src="./img/self-portrait.jpg" alt="" id="selfPortrait">
-        <h1 class="titleNav isHidden white" id="titleNav">Cody Lillywhite</h1>
-        <h1 class="white decorativeText center" id="codyLillywhiteh1">Cody Lillywhite</h1>
+        <h1 class="titleNav isHidden white outline" id="titleNav">Cody Lillywhite</h1>
+        <h1 class="white decorativeText center outline" id="codyLillywhiteh1">Cody Lillywhite</h1>
         <div class="white navText">Software Engineering student at BYU-I</div>
         <hr id="titleHr">
         <div class="icons">
-            <a class="icon" href="https://github.com/Codyl"> <i class="fab fa-github"></i></a>
-            <a class="icon" href="https://www.linkedin.com/in/cody-lillywhite/"> <i class="fab fa-linkedin"></i></a>
-            <a class="icon" href="https://dev.to/codyl"> <i class="fab fa-dev"></i></a>
+            <a class="black" href="https://github.com/Codyl"> <i class="fab fa-github"></i></a>
+            <a class="black" href="https://www.linkedin.com/in/cody-lillywhite/"> <i class="fab fa-linkedin"></i></a>
+            <a class="black" href="https://dev.to/codyl"> <i class="fab fa-dev"></i></a>
         </div>
     </div>
     <div class="blueBackground">
@@ -85,11 +85,11 @@
                     <li>Helped in learning clean code practices</li>
                     <li>Covered many JS capabilities</li>
                 </ul>
-                <a class="button" href="https://github.com/Codyl/dndproject">
+                <a class="button white" href="https://github.com/Codyl/dndproject">
                     <i  class="fab fa-github"></i>
                     View Code
                 </a>
-                <a class="button" href="https://codyl.github.io/dndProject">
+                <a class="button white" href="https://codyl.github.io/dndProject">
                     <i class="fas fa-vial"></i>
                     Try it out
                 </a>
@@ -108,11 +108,11 @@
                 <ul>
                     <li>Generates web page from SQL</li>
                 </ul>
-                <a class="button" href="https://github.com/Codyl/CP_CycleCount">
+                <a class="button white" href="https://github.com/Codyl/CP_CycleCount">
                     <i  class="fab fa-github"></i>
                     View Code
                 </a>
-                <a class="button isHidden" href="">
+                <a class="button white isHidden" href="">
                     <i class="fas fa-vial"></i>
                     Try it out
                 </a>
@@ -130,11 +130,11 @@
                 <ul>
                     <li>Node</li>
                 </ul>
-                <a class="button" href="https://github.com/Codyl/CP_OrderQueue">
+                <a class="button white" href="https://github.com/Codyl/CP_OrderQueue">
                     <i class="fab fa-github"></i>
                     View Code
                 </a>
-                <a class="button" href="https://chl-cse341-project2.herokuapp.com/">
+                <a class="button white" href="https://chl-cse341-project2.herokuapp.com/">
                     <i class="fas fa-vial"></i>
                     Try it out
                 </a>
@@ -148,7 +148,7 @@
                 <input class="block" type="email" name="_replyto" id="email" placeholder="Email">
                 <div>
                 <textarea  class="block" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <button class="button" onclick="sendEmail()">Send</button>
+                <button class="button white" onclick="sendEmail()">Send</button>
             </div>
             </form>
         </div>

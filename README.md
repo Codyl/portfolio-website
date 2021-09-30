@@ -2,13 +2,18 @@
 ---
 ## Table of Contents
 * Description
-* 
+* Highlights
+* Motivation
 ---
 ## Description
 Initial design for my personal website using raw HTML, JS, and CSS.
 [Github page](https://codyl.github.io/portfolioWebsite/)
 For the updated design in react go to [this link](https://github.com/Codyl/portfolioWebsiteReact)
 [Published website](http://codylillywhite.com/)
+---
+## Highlights
+* First code published on a domain
+* Continued refactoring
 ---
 ### What was your motivation?
 To have one page for hiring managers to look for information about me and find evidence of my ability to learn new things. It showcases my best work. Having a portfolio will 
